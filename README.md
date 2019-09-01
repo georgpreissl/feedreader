@@ -1,1 +1,2 @@
-# feedreader
+# Feedreader
+A javascript news feedreader
