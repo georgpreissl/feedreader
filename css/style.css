@@ -165,26 +165,47 @@ a {
 	background-size: 25px;
 	position: absolute;
 	z-index: 100;
-	background-color: rgba(0,0,0,0.2);
+	background-color: #576d7336;
 	-webkit-transition: background-color 0.3s;
 	-moz-transition: background-color 0.3s;
 	transition: background-color 0.3s;
-	background-repeat: no-repeat;
-	background-position:  center center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	
 }
+.nav path {
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	transition: 0.3s;
+	
+}
+.nav:hover path {
+	fill: white;
+	stroke: white;
+	
+}
+.nav path {
+	fill: var(--color1);
+	stroke-width: 1px;
+	stroke: var(--color1);
+}
 .nav:hover {
-	background-color: rgba(0,0,0,0.5);
+	background-color: var(--color1);
 	
 }
 .next {
 	left: 50%;
-	background-image: url('img/arrow-right.png');
 	
 }	
 .prev {
 	left: 0px;
-	background-image: url('img/arrow-left.png');
+	
+}
+.prev svg {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
 	
 }
 #feedWrap {
